@@ -6,7 +6,7 @@ def login():
     password = entry_password.get()
     
     # Aquí puedes agregar la lógica para validar las credenciales
-    if username == "AdminIPC2" and password == "IPC2VJ2024":
+    if username == "admin" and password == "admin":
         messagebox.showinfo("Inicio de sesión", "Inicio como Administrador")
     elif username == "usuario" and password == 'usuario':
         messagebox.showinfo("Inicia de sesión", "Ingresó como Usuario")
