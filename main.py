@@ -7,7 +7,9 @@ def login():
     
     # Aquí puedes agregar la lógica para validar las credenciales
     if username == "AdminIPC2" and password == "IPC2VJ2024":
-        messagebox.showinfo("Inicio de sesión", "Inicio de sesión exitoso")
+        messagebox.showinfo("Inicio de sesión", "Inicio como Administrador")
+    elif username == "usuario" and password == 'usuario':
+        messagebox.showinfo("Inicia de sesión", "Ingresó como Usuario")
     else:
         messagebox.showerror("Error", "Usuario o contraseña incorrectos")
 
@@ -70,7 +72,7 @@ entry_password = tk.Entry(root, show="*", font=fuente_Personalizada)
 entry_password.grid(row=1, column=1, padx=5, pady=5, sticky='ew')
 entry_password.place(x=185 ,y=215, width= 270) 
 
-button_login = tk.Button(root, text="Iniciar sesión", command=login, font=fuente_Personalizada, bg='turquoise3')
+button_login = tk.Button(root, text="Ingresar", command=login, font=fuente_Personalizada, bg='turquoise3')
 button_login.place(x=205 , y=270, width= 150, height=40 )
 
 #Esto es para que cambie de color cuando presiona el usuario presiona el botón

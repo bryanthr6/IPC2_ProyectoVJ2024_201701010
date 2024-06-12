@@ -1,0 +1,7 @@
+Para ingresar como administrador
+Usuario: AdminIPC2
+Contraseña: IPC2VJ2024
+
+Para ingresar como comprador:
+Usuario: usuario
+Contraseña: usuario
