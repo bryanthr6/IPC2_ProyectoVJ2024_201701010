@@ -14,6 +14,16 @@ class LoginWindow(tk.Tk):
 
         self.center_window()  # Centrar la ventana en la pantalla
 
+        # Cargar la imagen del logotipo
+        logo_path = r"C:\Users\Bryant Herrera\Documents\Repositorios\IPC2_ProyectoVJ2024_201701010\mercado.png"
+        logo = tk.PhotoImage(file=logo_path)
+        logo = logo.subsample(4)
+
+        # Crear el label para la imagen
+        label_logo = tk.Label(self, image=logo, bg='royalblue4')
+        label_logo.image = logo  # Mantener referencia a la imagen para evitar que se elimine por el recolector de basura
+        label_logo.place(x=90, y=20)
+
         self.create_widgets()
 
     def center_window(self):
