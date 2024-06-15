@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actividades>
+    <actividad id="1">
+        <nombre>Atención al Cliente</nombre>
+        <descripcion>Atender a los clientes de la tienda</descripcion>
+        <empleado>1</empleado>
+        <dia hora="14">2</dia>
+    </actividad>
+    <actividad id="2">
+        <nombre>Limpieza de estanterías</nombre>
+        <descripcion>Limpiar y ordenar las estanterias del pasillo 1</descripcion>
+        <empleado>1</empleado>
+        <dia hora="7">1</dia>
+    </actividad>
+</actividades>

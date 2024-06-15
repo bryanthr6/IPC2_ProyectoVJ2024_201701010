@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empleados>
+    <empleado codigo="1">
+        <nombre>Rodrigo Hernández</nombre>
+        <puesto>Vendedor</puesto>
+    </empleado>
+    <empleado codigo="2">
+        <nombre>Alejandro de León</nombre>
+        <puesto>Vendedor</puesto>
+    </empleado>
+</empleados>
