@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productos>
+    <producto id="IPCM-1">
+        <nombre>Computadora de Escritorio</nombre>
+        <precio>5,000.00</precio>
+        <descripcion>Computadora de escritorio con procesador Intel Core i7, 16 GB de RAM, 1 TB de almacenamiento y tarjeta gráfica NVIDIA GeForce RTX 2080.</descripcion>
+        <categoria>Tecnología</categoria>
+        <cantidad>10</cantidad>
+        <imagen>C:\imagenesP1IPC2\imagen1.jpg</imagen>
+    </producto>
+    <producto id="IPCM-2">
+        <nombre>Frijoles</nombre>
+        <precio>2.50</precio>
+        <descripcion> 1 libra de frijoles negros</descripcion>
+        <categoria>Comida</categoria>
+        <cantidad>50</cantidad>
+        <imagen>C:\imagenesP1IPC2\imagen2.jpg</imagen>
+    </producto>
+</productos>
