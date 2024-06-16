@@ -268,19 +268,32 @@ class AdminWindow(tk.Tk):
         label_titulo = tk.Label(self, text='Autorizar Compra', bg=colorF, fg='medium spring green', font=('Comic Sans MS', 30, 'bold'))
         label_titulo.place(x=30, y=30)
 
-        # Crear un Scrollbar
+        # Crear un Scrollbar vertical
         scrollbar_vertical = tk.Scrollbar(self)
         scrollbar_vertical.grid(row=1, column=1, padx=5, pady=5, sticky='ns')
 
+        #Crear un Scrollbar horizontal
+        scrollbar_horizontal = tk.Scrollbar(self, orient="horizontal")
+        scrollbar_horizontal.grid(row=2, column=0, padx=5, pady=5, sticky='ew')
+
         #Cuadro de texto de la ventana
-        self.txt_compra = tk.Text(self, width=49, height=24, wrap='none', yscrollcommand=scrollbar_vertical.set, font=fuente_Personalizada)
+        self.txt_compra = tk.Text(self, width=49, height=24, wrap='none', yscrollcommand=scrollbar_vertical.set, xscrollcommand=scrollbar_horizontal.set ,font=fuente_Personalizada)
         self.txt_compra.grid(row=1, column=0, padx=5, pady=5, sticky='ew')
         self.txt_compra.place(x=30, y=120)
 
-        # Configurar barras de desplazamiento
+        # Configurar barras de desplazamiento Vertical
         scrollbar_vertical.config(command=self.txt_compra.yview)
         # Cambiar la posición de las barras de desplazamiento
         scrollbar_vertical.place(x=474, y=120, height=340)
+
+        #Configurar barras de desplazamiento Horizontal
+        scrollbar_horizontal.config(command=self.txt_compra.xview)
+        #Cambiar la posición de la barra de desplazamiento
+        scrollbar_horizontal.place(x=30,y=460 ,width=445)
+
+        #Botón de actividades
+        btn_actividades  = tk.Button(self, text="Ver actividades Hoy", font=fuente_Personalizada, justify='center', wraplength=110, bg="turquoise3")
+        btn_actividades.place(x=530, y=30, width=180, height=70)
 
         #Botón Aceptar
         btn_aceptar = tk.Button(self, text="Aceptar", font=fuente_Personalizada, bg='turquoise3', command=lambda: messagebox.showinfo("Aceptar", "Operación aceptada."))
