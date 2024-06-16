@@ -161,7 +161,7 @@ class Usuario:
             raise ValueError(f"Teléfono inválido: {self.telefono}")
 
     def __str__(self):
-        return f"ID: {self.id}, Nombre: {self.nombre}, Edad: {self.edad}, Email: {self.email}, Teléfono: {self.telefono}"
+        return f"ID: {self.id}, Contraseña: {self.password},Nombre: {self.nombre}, Edad: {self.edad}, Email: {self.email}, Teléfono: {self.telefono}"
 
 class Producto:
     def __init__(self, id, nombre, precio, descripcion, categoria, cantidad, imagen):
