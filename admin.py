@@ -211,7 +211,7 @@ class ListaOrtogonal:
             while current_col:
                 # Node attributes
                 attributes = f'ID: {current_col.data.id}\nNombre: {current_col.data.nombre}\nEmpleado: {current_col.data.empleado}'
-                dot.node(f'{current_col.data.id}', attributes)
+                dot.node(f'{current_col.data.id}', attributes, shape='box')
 
                 # Relationships
                 if current_col.right:
@@ -224,6 +224,7 @@ class ListaOrtogonal:
             current_row = current_row.down
 
         dot.render(ruta, format='png', cleanup=True)
+
 
     def __iter__(self):
         current_row = self.head
