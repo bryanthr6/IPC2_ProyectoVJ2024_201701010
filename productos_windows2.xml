@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<productos>
+    <producto id="IPCMK-1">
+        <nombre>Televisor</nombre>
+        <precio>854.25</precio>
+        <descripcion>Illo harum vitae eligendi sed quasi fugiat deleniti sit.</descripcion>
+        <categoria>Tecnologia</categoria>
+        <cantidad>67</cantidad>
+        <imagen>C:/CalificacionIPC2/img1.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-2">
+        <nombre>Queso</nombre>
+        <precio>6098.77</precio>
+        <descripcion>Quisquam ad voluptatem odit voluptatum laudantium sequi iste quidem reprehenderit harum perspiciatis aliquam exercitationem nam eum doloremque.</descripcion>
+        <categoria>Comida</categoria>
+        <cantidad>55</cantidad>
+        <imagen>C:/CalificacionIPC2/img2.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-3">
+        <nombre>Mi Primer libro de Poesia</nombre>
+        <precio>8558.45</precio>
+        <descripcion>Et similique voluptatum at dolorem incidunt quisquam esse natus architecto nesciunt cumque magni alias odit eum eveniet at.</descripcion>
+        <categoria>Libros</categoria>
+        <cantidad>38</cantidad>
+        <imagen>C:/CalificacionIPC2/img3.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-4">
+        <nombre>Auriculares</nombre>
+        <precio>1959.22</precio>
+        <descripcion>Et qui vel quas magni aut deleniti aut saepe molestias omnis expedita rem quibusdam excepturi nobis accusantium.</descripcion>
+        <categoria>Tecnologia</categoria>
+        <cantidad>29</cantidad>
+        <imagen>C:/CalificacionIPC2/img4.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-5">
+        <nombre>Pasta Spagetti</nombre>
+        <precio>3482.91</precio>
+        <descripcion>Cupiditate odio nisi exercitationem ipsum eius beatae omnis vitae aliquid praesentium.</descripcion>
+        <categoria>Comida</categoria>
+        <cantidad>20</cantidad>
+        <imagen>C:/CalificacionIPC2/img5.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-6">
+        <nombre>Diario de Anne Frank</nombre>
+        <precio>5370.76</precio>
+        <descripcion>Inventore dicta consequuntur vitae cupiditate earum beatae totam aperiam quam aut qui maxime sed consequatur necessitatibus quasi.</descripcion>
+        <categoria>Libros</categoria>
+        <cantidad>73</cantidad>
+        <imagen>C:/CalificacionIPC2/img6.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-7">
+        <nombre>Pesas</nombre>
+        <precio>155.36</precio>
+        <descripcion>Explicabo natus ea est est repudiandae veniam praesentium fugiat minima consectetur ea voluptas cumque nam recusandae ratione.</descripcion>
+        <categoria>Deportes</categoria>
+        <cantidad>3</cantidad>
+        <imagen>C:/CalificacionIPC2/img7.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-8">
+        <nombre>Lampara</nombre>
+        <precio>2163.84</precio>
+        <descripcion>Cupiditate cum consequuntur eius consectetur placeat expedita corrupti pariatur vero porro provident occaecati reprehenderit quidem est.</descripcion>
+        <categoria>Hogar</categoria>
+        <cantidad>74</cantidad>
+        <imagen>C:/CalificacionIPC2/img8.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-9">
+        <nombre>Bancopoly</nombre>
+        <precio>6986.28</precio>
+        <descripcion>Minima recusandae ex aliquid odio laboriosam dolore maiores ducimus maxime quisquam odit excepturi error autem qui dicta tenetur.</descripcion>
+        <categoria>Juguetes</categoria>
+        <cantidad>87</cantidad>
+        <imagen>C:/CalificacionIPC2/img9.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-10">
+        <nombre>Sombrero</nombre>
+        <precio>3497.28</precio>
+        <descripcion>Eum atque perferendis dolores pariatur architecto veniam commodi consectetur adipisci ex ipsa eveniet.</descripcion>
+        <categoria>Ropa</categoria>
+        <cantidad>50</cantidad>
+        <imagen>C:/CalificacionIPC2/img10.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-11">
+        <nombre>Cortina</nombre>
+        <precio>396.89</precio>
+        <descripcion>Neque deserunt quisquam neque nulla excepturi ducimus illo aliquid voluptates sit.</descripcion>
+        <categoria>Hogar</categoria>
+        <cantidad>20</cantidad>
+        <imagen>C:/CalificacionIPC2/img11.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-12">
+        <nombre>Harry Potter y la piedra filosofal</nombre>
+        <precio>73.16</precio>
+        <descripcion>Autem quam officia architecto ipsum a vero corporis molestias quos distinctio dicta.</descripcion>
+        <categoria>Libros</categoria>
+        <cantidad>53</cantidad>
+        <imagen>C:/CalificacionIPC2/img12.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-13">
+        <nombre>Lego Classic</nombre>
+        <precio>5375.92</precio>
+        <descripcion>Perferendis velit itaque rerum ratione debitis temporibus consectetur earum doloribus omnis expedita enim ipsum.</descripcion>
+        <categoria>Juguetes</categoria>
+        <cantidad>99</cantidad>
+        <imagen>C:/CalificacionIPC2/img13.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-14">
+        <nombre>Tenedor</nombre>
+        <precio>6260.33</precio>
+        <descripcion>Provident perspiciatis labore nobis porro illo minima laboriosam error fugit magni.</descripcion>
+        <categoria>Hogar</categoria>
+        <cantidad>65</cantidad>
+        <imagen>C:/CalificacionIPC2/img14.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-15">
+        <nombre>Estanteria</nombre>
+        <precio>1568.75</precio>
+        <descripcion>Rerum odio autem quia nesciunt atque distinctio repudiandae architecto autem minus voluptatibus.</descripcion>
+        <categoria>Hogar</categoria>
+        <cantidad>33</cantidad>
+        <imagen>C:/CalificacionIPC2/img15.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-16">
+        <nombre>Rompecabezas</nombre>
+        <precio>8560.46</precio>
+        <descripcion>Voluptates sapiente animi dicta quidem sunt et quas ullam molestiae ea natus.</descripcion>
+        <categoria>Juguetes</categoria>
+        <cantidad>6</cantidad>
+        <imagen>C:/CalificacionIPC2/img16.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-17">
+        <nombre>Enciclopedia</nombre>
+        <precio>6219.71</precio>
+        <descripcion>Sed cum ut totam vero enim soluta perspiciatis placeat pariatur animi expedita facilis nostrum facilis tenetur corporis doloribus.</descripcion>
+        <categoria>Libros</categoria>
+        <cantidad>62</cantidad>
+        <imagen>C:/CalificacionIPC2/img17.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-18">
+        <nombre>Espejo</nombre>
+        <precio>2219.97</precio>
+        <descripcion>Mollitia ullam neque sunt illum velit laborum veniam quaerat.</descripcion>
+        <categoria>Hogar</categoria>
+        <cantidad>28</cantidad>
+        <imagen>C:/CalificacionIPC2/img18.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-19">
+        <nombre>Palo de Golf</nombre>
+        <precio>123.10</precio>
+        <descripcion>Sequi eveniet sed unde maxime odit tempore quia vel aperiam ab alias.</descripcion>
+        <categoria>Deportes</categoria>
+        <cantidad>95</cantidad>
+        <imagen>C:/CalificacionIPC2/img19.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-20">
+        <nombre>Router</nombre>
+        <precio>4584.02</precio>
+        <descripcion>Dolorum natus quos delectus quia veniam est error autem officia consequatur voluptatibus maiores dolores nulla minima inventore doloribus delectus ullam.</descripcion>
+        <categoria>Tecnologia</categoria>
+        <cantidad>9</cantidad>
+        <imagen>C:/CalificacionIPC2/img20.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-21">
+        <nombre>Sofa</nombre>
+        <precio>9725.00</precio>
+        <descripcion>Quae voluptatibus ducimus sint reprehenderit nam eum aut sunt nisi vel saepe dolor.</descripcion>
+        <categoria>Hogar</categoria>
+        <cantidad>28</cantidad>
+        <imagen>C:/CalificacionIPC2/img21.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-22">
+        <nombre>El Principito</nombre>
+        <precio>9604.16</precio>
+        <descripcion>Sunt hic error aliquam fugit eius quia sit nisi molestias.</descripcion>
+        <categoria>Libros</categoria>
+        <cantidad>68</cantidad>
+        <imagen>C:/CalificacionIPC2/img22.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-23">
+        <nombre>Cereal</nombre>
+        <precio>8865.38</precio>
+        <descripcion>Consequuntur dolor error fugiat qui incidunt aspernatur quia exercitationem dicta.</descripcion>
+        <categoria>Comida</categoria>
+        <cantidad>53</cantidad>
+        <imagen>C:/CalificacionIPC2/img23.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-24">
+        <nombre>Tabla de Surf</nombre>
+        <precio>1797.74</precio>
+        <descripcion>Fugit minima amet nesciunt saepe illo impedit magni id consequuntur quis earum soluta veniam aliquid dolores necessitatibus iusto maxime fuga repellat.</descripcion>
+        <categoria>Deportes</categoria>
+        <cantidad>46</cantidad>
+        <imagen>C:/CalificacionIPC2/img24.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-25">
+        <nombre>Pelota de Voleibol</nombre>
+        <precio>1415.53</precio>
+        <descripcion>Placeat assumenda libero assumenda velit saepe aliquid rem suscipit aliquid tempora qui placeat illum.</descripcion>
+        <categoria>Deportes</categoria>
+        <cantidad>78</cantidad>
+        <imagen>C:/CalificacionIPC2/img25.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-26">
+        <nombre>Figuras de Accion</nombre>
+        <precio>1510.51</precio>
+        <descripcion>Amet quis doloribus temporibus accusantium nobis consequatur numquam corporis eos cupiditate alias itaque.</descripcion>
+        <categoria>Juguetes</categoria>
+        <cantidad>34</cantidad>
+        <imagen>C:/CalificacionIPC2/img26.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-27">
+        <nombre>Pan</nombre>
+        <precio>936.40</precio>
+        <descripcion>Cumque aliquam distinctio autem atque dolor minima eligendi neque cumque placeat quam modi distinctio blanditiis maiores vitae.</descripcion>
+        <categoria>Comida</categoria>
+        <cantidad>35</cantidad>
+        <imagen>C:/CalificacionIPC2/img27.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-28">
+        <nombre>Hamlet</nombre>
+        <precio>7849.57</precio>
+        <descripcion>Sint aperiam maiores totam velit eum veniam vero quos iure saepe aut ex.</descripcion>
+        <categoria>Libros</categoria>
+        <cantidad>91</cantidad>
+        <imagen>C:/CalificacionIPC2/img28.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-29">
+        <nombre>Patines</nombre>
+        <precio>4462.39</precio>
+        <descripcion>Sed dignissimos aut consectetur deserunt impedit necessitatibus ipsam facilis numquam nesciunt veniam eum officiis similique molestias.</descripcion>
+        <categoria>Deportes</categoria>
+        <cantidad>60</cantidad>
+        <imagen>C:/CalificacionIPC2/img29.jpg</imagen>
+    </producto>
+    <producto id="IPCMK-30">
+        <nombre>Cinturon</nombre>
+        <precio>6438.00</precio>
+        <descripcion>Eum iure cumque nisi doloremque exercitationem veniam neque temporibus delectus dignissimos dolores deleniti tempore saepe quas eaque beatae tenetur inventore.</descripcion>
+        <categoria>Ropa</categoria>
+        <cantidad>90</cantidad>
+        <imagen>C:/CalificacionIPC2/img30.jpg</imagen>
+    </producto>
+</productos>

@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<empleados>
+    <empleado codigo="1">
+        <nombre>Zacarías Garriga Cobo</nombre>
+        <puesto>Vendedor</puesto>
+    </empleado>
+    <empleado codigo="2">
+        <nombre>África Trini Lloret Puerta</nombre>
+        <puesto>Administrador</puesto>
+    </empleado>
+    <empleado codigo="3">
+        <nombre>Carlos Onofre Palmer Pagès</nombre>
+        <puesto>Recepcionista</puesto>
+    </empleado>
+    <empleado codigo="4">
+        <nombre>Juan Bautista Pascual Arellano Conde</nombre>
+        <puesto>Gerente</puesto>
+    </empleado>
+    <empleado codigo="5">
+        <nombre>Priscila Jennifer Cánovas Casares</nombre>
+        <puesto>Gerente</puesto>
+    </empleado>
+    <empleado codigo="6">
+        <nombre>Cecilia Folch-Calatayud</nombre>
+        <puesto>Asistente</puesto>
+    </empleado>
+    <empleado codigo="7">
+        <nombre>Leonardo Mayoral Gonzalez</nombre>
+        <puesto>Gerente</puesto>
+    </empleado>
+    <empleado codigo="8">
+        <nombre>Haroldo Soler Ferrándiz</nombre>
+        <puesto>Supervisor</puesto>
+    </empleado>
+    <empleado codigo="9">
+        <nombre>Montserrat Marin Zabaleta</nombre>
+        <puesto>Administrador</puesto>
+    </empleado>
+    <empleado codigo="10">
+        <nombre>Mar Herrera Díez</nombre>
+        <puesto>Vendedor</puesto>
+    </empleado>
+    <empleado codigo="11">
+        <nombre>Conrado Chico-Chamorro</nombre>
+        <puesto>Administrador</puesto>
+    </empleado>
+    <empleado codigo="12">
+        <nombre>Sofía Modesta Peñalver Roda</nombre>
+        <puesto>Contador</puesto>
+    </empleado>
+    <empleado codigo="13">
+        <nombre>Marcio Adadia</nombre>
+        <puesto>Contador</puesto>
+    </empleado>
+    <empleado codigo="14">
+        <nombre>Dionisia Romero</nombre>
+        <puesto>Administrador</puesto>
+    </empleado>
+    <empleado codigo="15">
+        <nombre>Fidel Calatayud Corbacho</nombre>
+        <puesto>Supervisor</puesto>
+    </empleado>
+    <empleado codigo="16">
+        <nombre>Lalo del Puente</nombre>
+        <puesto>Gerente</puesto>
+    </empleado>
+    <empleado codigo="17">
+        <nombre>Sabas Iñiguez Escudero</nombre>
+        <puesto>Gerente</puesto>
+    </empleado>
+    <empleado codigo="18">
+        <nombre>Clímaco Flor Mariscal</nombre>
+        <puesto>Supervisor</puesto>
+    </empleado>
+    <empleado codigo="19">
+        <nombre>Gil Rovira Robledo</nombre>
+        <puesto>Recepcionista</puesto>
+    </empleado>
+    <empleado codigo="20">
+        <nombre>Gracia Eulalia Martinez Montalbán</nombre>
+        <puesto>Vendedor</puesto>
+    </empleado>
+    <empleado codigo="21">
+        <nombre>Arsenio del Narváez</nombre>
+        <puesto>Contador</puesto>
+    </empleado>
+    <empleado codigo="22">
+        <nombre>Loreto Montserrat-Manjón</nombre>
+        <puesto>Administrador</puesto>
+    </empleado>
+    <empleado codigo="23">
+        <nombre>Amor Pedro Frutos</nombre>
+        <puesto>Vendedor</puesto>
+    </empleado>
+    <empleado codigo="24">
+        <nombre>Dionisia Cazorla Pomares</nombre>
+        <puesto>Supervisor</puesto>
+    </empleado>
+    <empleado codigo="25">
+        <nombre>Cloe Gallart Vega</nombre>
+        <puesto>Supervisor</puesto>
+    </empleado>
+</empleados>
