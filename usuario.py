@@ -12,6 +12,7 @@ class userWindow(tk.Tk):
         self.config(bg='royalblue4')
 
         self.center_window()
+        self.create_widgets()
 
 
     def center_window(self):
@@ -29,6 +30,18 @@ class userWindow(tk.Tk):
 
         #Establecer la geometría de la ventana
         self.geometry(f"{ancho_ventana}x{alto_ventana}+{x_pos}+{y_pos}")
+
+    def create_widgets(self):
+        fuente_Personalizada = ('Verdana', 11, 'bold')
+
+        #Crear un botón de salir o regresar al menú de login screen
+        btn_salir = tk.Button(self, text="salir", font=fuente_Personalizada, bg='turquoise3', command=self.return_to_login)
+        btn_salir.place(x=200, y=200, width=150, height=40)
+
+    def return_to_login(self):
+        self.destroy()
+        login_app = login.LoginWindow()
+        login_app.mainloop()
 
 
 

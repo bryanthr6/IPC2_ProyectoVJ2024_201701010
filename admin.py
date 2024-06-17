@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 from tkinter import filedialog
+from graphviz import Digraph
 import xml.etree.ElementTree as ET
 import re
 import login
@@ -24,6 +25,35 @@ class ListaDoble:
             self.tail.next = new_node
             new_node.prev = self.tail
             self.tail = new_node
+
+    def generar_grafico(self, ruta):
+        dot = Digraph(comment='Lista Doble Enlazada de Usuarios')
+        dot.attr(rankdir='LR')  # Orientación de izquierda a derecha
+
+        current = self.head
+        while current:
+            # Construir la etiqueta del nodo con todos los atributos del usuario
+            node_label = (
+                f'{{ <prev> | '
+                f'{{ ID: {current.data.id} | '
+                f'Contraseña: {current.data.password} | '
+                f'Nombre: {current.data.nombre} | '
+                f'Edad: {current.data.edad} | '
+                f'Email: {current.data.email} | '
+                f'Teléfono: {current.data.telefono} }} '
+                f'| <next> }}'
+            )
+            dot.node(str(current.data.id), node_label, shape='record')
+
+            # Conectar con el siguiente nodo si existe
+            if current.next:
+                dot.edge(str(current.data.id), str(current.next.data.id))
+                dot.edge(str(current.next.data.id), str(current.data.id), constraint='false')
+
+            current = current.next
+
+        dot.render(ruta, format='png', cleanup=True)
+
 
     def __iter__(self):
         current = self.head
@@ -57,6 +87,26 @@ class ListaCircularDoble:
             new_node.prev = tail
             new_node.next = self.head
             self.head.prev = new_node
+
+    def generar_grafico(self, ruta):
+        dot = Digraph(comment='Lista Circular Doblemente Enlazada de Productos')
+        dot.attr(rankdir='LR')  # Orientación de izquierda a derecha
+
+        current = self.head
+        first = True
+        while current and (first or current != self.head):
+            first = False
+            # Crear el nodo con tres cuadros
+            node_label = f'{{ <prev> | {{ ID: {current.data.id} | Nombre: {current.data.nombre} | Precio: {current.data.precio} }} | <next> }}'
+            dot.node(str(current.data.id), node_label, shape='record')
+
+            # Conexión circular
+            dot.edge(str(current.data.id), str(current.next.data.id), dir='both')
+
+            current = current.next
+
+        dot.render(ruta, format='png', cleanup=True)
+
 
     def __iter__(self):
         if not self.head:
@@ -93,6 +143,27 @@ class ListaCircularSimple:
             current.next = new_node
             new_node.next = self.head
 
+    def generar_grafico(self, ruta):
+        dot = Digraph(comment='Lista Circular Simplemente Enlazada de Empleados')
+        dot.attr(rankdir='LR')  # Orientación de izquierda a derecha
+
+        current = self.head
+        first = True
+        while current and (first or current != self.head):
+            first = False
+            # Crear el nodo con dos cuadros, uno a la izquierda con la información y otro en blanco a la derecha
+            node_label = f'{{ {{ Nombre: {current.data.nombre} | Puesto: {current.data.puesto} }} | <empty> }}'
+            dot.node(str(current.data.codigo), node_label, shape='record')
+
+            next_node = current.next if current.next != self.head else self.head
+
+            # Conexión de izquierda a derecha
+            dot.edge(str(current.data.codigo), str(next_node.data.codigo), dir='both', tailport='e', headport='w')
+
+            current = current.next
+
+        dot.render(ruta, format='png', cleanup=True)
+
     def __iter__(self):
         if not self.head:
             return
@@ -128,6 +199,31 @@ class ListaOrtogonal:
             while current.down:
                 current = current.down
             current.down = new_node
+
+    def generar_grafico(self, ruta):
+        dot = Digraph(comment='Lista Ortogonal de Actividades')
+        dot.attr(rankdir='LR')  # Orientación de izquierda a derecha
+
+        # Crear nodos y relaciones
+        current_row = self.head
+        while current_row:
+            current_col = current_row
+            while current_col:
+                # Node attributes
+                attributes = f'ID: {current_col.data.id}\nNombre: {current_col.data.nombre}\nEmpleado: {current_col.data.empleado}'
+                dot.node(f'{current_col.data.id}', attributes)
+
+                # Relationships
+                if current_col.right:
+                    dot.edge(f'{current_col.data.id}', f'{current_col.right.data.id}', constraint='false', dir='both')
+                if current_col.down:
+                    dot.edge(f'{current_col.data.id}', f'{current_col.down.data.id}', constraint='false', dir='both')
+
+                current_col = current_col.right
+
+            current_row = current_row.down
+
+        dot.render(ruta, format='png', cleanup=True)
 
     def __iter__(self):
         current_row = self.head
@@ -254,6 +350,7 @@ class AdminWindow(tk.Tk):
 
 
         self.menu_bar = tk.Menu(self)
+
         self.config(menu=self.menu_bar)
 
         self.menu_carga = tk.Menu(self.menu_bar, tearoff=0)
@@ -263,6 +360,16 @@ class AdminWindow(tk.Tk):
         self.menu_carga.add_command(label="Cargar Empleados", command=self.cargar_archivo_empleados)
         self.menu_carga.add_command(label="Cargar Actividades", command=self.cargar_archivo_actividades)
         self.menu_bar.add_cascade(label="Cargar Archivos", menu=self.menu_carga)
+
+        self.menu_reporte = tk.Menu(self.menu_bar, tearoff=0)
+        self.menu_reporte.add_command(label="Reporte Usuarios", command=self.generar_reporte_usuarios)
+        self.menu_reporte.add_command(label="Reporte Productos", command=self.generar_reporte_productos)
+        self.menu_reporte.add_separator()
+        self.menu_reporte.add_command(label="Reporte Empleados", command=self.generar_reporte_vendedores)
+        self.menu_reporte.add_command(label="Reporte Actividades", command=self.generar_reporte_actividades)
+        self.menu_bar.add_cascade(label="Reporte", menu=self.menu_reporte)
+        
+
 
         #Etiqueta del título:
         label_titulo = tk.Label(self, text='Autorizar Compra', bg=colorF, fg='medium spring green', font=('Comic Sans MS', 30, 'bold'))
@@ -307,6 +414,34 @@ class AdminWindow(tk.Tk):
         self.btn_salir = tk.Button(self, text="Salir", command=self.return_to_login, font=fuente_Personalizada, bg='turquoise3')
         self.btn_salir.place(x=530, y=410, width=180, height=50)
 
+    def generar_reporte_usuarios(self):
+        ruta_reporte = './IPC2_ProyectoVJ2024_201701010/Reportes/ListaUsuarios'
+        self.usuarios.generar_grafico(ruta_reporte)
+        messagebox.showinfo("Éxito", "Reporte de usuarios generado correctamente.")
+        import os
+        os.system(f'start {ruta_reporte}.png')
+
+    def generar_reporte_productos(self):
+        ruta_reporte = './IPC2_ProyectoVJ2024_201701010/Reportes/ListaProductos'
+        self.productos.generar_grafico(ruta_reporte)
+        messagebox.showinfo("Éxito", "Reporte de productos generado correctamente.")
+        import os
+        os.system(f'start {ruta_reporte}.png')
+
+    def generar_reporte_vendedores(self):
+        ruta_reporte = './IPC2_ProyectoVJ2024_201701010/Reportes/ListaVendedores'
+        self.empleados.generar_grafico(ruta_reporte)
+        messagebox.showinfo("Éxito", "Reporte de vendedores generado correctamente.")
+        import os
+        os.system(f'start {ruta_reporte}.png')
+
+    def generar_reporte_actividades(self):
+        ruta_reporte = './IPC2_ProyectoVJ2024_201701010/Reportes/ListaOrtogonal'
+        self.actividades.generar_grafico(ruta_reporte)
+        messagebox.showinfo("Éxito", "Reporte de actividades generado correctamente.")
+        import os
+        os.system(f'start {ruta_reporte}.png')
+        
     def borrar_texto(self):
         self.txt_compra.delete(1.0, tk.END)
 
