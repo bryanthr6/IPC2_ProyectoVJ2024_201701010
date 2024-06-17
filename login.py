@@ -69,7 +69,7 @@ class LoginWindow(tk.Tk):
         username = self.entry_username.get()
         password = self.entry_password.get()
 
-        if username == "admin" and password == "admin":
+        if username == "AdminIPC2" and password == "IPC2VJ2024":
             messagebox.showinfo("Login", "Login exitoso como administrador")
             self.destroy()  # Cierra la ventana de login
 
