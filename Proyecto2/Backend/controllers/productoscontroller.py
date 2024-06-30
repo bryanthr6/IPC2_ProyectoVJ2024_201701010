@@ -1,11 +1,11 @@
 from flask import Blueprint, jsonify, request
 from models.producto import Producto
+from controllers.estructuras import productos
 from xml.etree import ElementTree as ET
 import os
 
 Blueprint_producto = Blueprint('producto', __name__)
 
-productos = []
 
 @Blueprint_producto.route('/cargaproductos', methods=['POST'])
 def cargarProductos():

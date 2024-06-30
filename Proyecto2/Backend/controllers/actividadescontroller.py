@@ -1,11 +1,11 @@
 from flask import Blueprint, jsonify, request
 from models.actividad import Actividad
+from controllers.estructuras import actividades
 from xml.etree import ElementTree as ET
 import os
 
 Blueprint_actividad = Blueprint('actividad', __name__)
 
-actividades = []
 
 @Blueprint_actividad.route('/cargaactividades', methods=['POST'])
 def cargarActividades():

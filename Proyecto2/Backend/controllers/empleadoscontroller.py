@@ -1,11 +1,10 @@
 from flask import Blueprint, jsonify, request
 from models.empleado import Empleado
+from controllers.estructuras import empleados
 from xml.etree import ElementTree as ET
 import os
 
 Blueprint_empleado = Blueprint('empleado', __name__)
-
-empleados = []
 
 @Blueprint_empleado.route('/cargaempleados', methods=['POST'])
 def cargarEmpleados():
