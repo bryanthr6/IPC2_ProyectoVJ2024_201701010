@@ -8,6 +8,8 @@ from django.core.cache import cache
 from django.http import HttpResponse
 #Para mostrar mensajes en pantalla
 from django.contrib import messages
+from django.shortcuts import redirect
+from django.contrib.auth import logout
 
 
 # Create your views here.
@@ -202,3 +204,10 @@ def verProductos(request):
 
 def userview(request):
     return render(request, 'user.html')
+
+def custom_logout(request):
+    logout(request)
+    return redirect('/login')  # 'login' debe ser el nombre de la URL de tu página de inicio de sesión
+
+def viewPDF(request):
+    return render(request, 'verpdf.html')

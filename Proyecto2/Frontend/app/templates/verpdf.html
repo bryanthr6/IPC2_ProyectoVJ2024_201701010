@@ -1,0 +1,15 @@
+{% extends "sidebaradmin.html" %}
+{% load static %}
+{% block content %}
+<div class="text-center my-6">
+    <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white">Datos Estudiante</h2>
+</div>
+<div class="w-full">
+    <div class="bg-white border border-gray-200 rounded-lg shadow-md">
+        <div class="flex items-center justify-around p-4">
+            <embed type="application/pdf" src="{% static 'files/DatosUsuario.pdf' %}" class="w-full" height="750">
+            <embed type="application/pdf" src="{% static 'files/201701010-EnsayoProyecto1-IPC2-lab.pdf' %}" class="w-full" height="750">
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,4 +1,5 @@
 from django.urls import path
+from django.contrib.auth import views as auth_views
 
 from . import views
 
@@ -14,4 +15,6 @@ urlpatterns = [
     path('xmlEmpleados/', views.enviarEmpleados, name='xmlEmpleados'),
     path('xmlActividades/', views.enviarActividades, name='xmlActividades'),
     path('productos/', views.verProductos, name='productos'),
+    path('logout/', views.custom_logout, name='logout'),
+    path('pdf/', views.viewPDF, name='pdf'),
 ]
