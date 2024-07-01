@@ -4,6 +4,7 @@ from controllers.estructuras import productos
 from xml.etree import ElementTree as ET
 import os
 
+
 Blueprint_producto = Blueprint('producto', __name__)
 
 
