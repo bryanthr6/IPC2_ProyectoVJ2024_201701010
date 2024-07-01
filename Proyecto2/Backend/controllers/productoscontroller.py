@@ -80,6 +80,44 @@ def cargarProductos():
             'status': 404
         }), 404
 
+
+@Blueprint_producto.route('/verProductos', methods=['GET'])
+def ver_productos():
+    try:
+        if not productos:
+            return jsonify({
+                'productos': [],
+                'message': 'No hay productos disponibles',
+                'status': 404
+            }), 404
+
+        # Crear manualmente la lista de productos en formato JSON
+        productos_json = [
+            {
+                'id': producto.id,
+                'nombre': producto.nombre,
+                'precio': producto.precio,
+                'descripcion': producto.descripcion,
+                'categoria': producto.categoria,
+                'cantidad': producto.cantidad,
+                'imagen': producto.imagen
+            }
+            for producto in productos
+        ]
+
+        return jsonify({
+            'productos': productos_json,
+            'message': 'Lista de productos obtenida correctamente',
+            'status': 200
+        }), 200
+    except Exception as e:
+        return jsonify({
+            'message': f'Error al obtener la lista de productos: {str(e)}',
+            'status': 500
+        }), 500
+
+
+
 def precargar_productos():
     productos = []
     if os.path.exists('database/productos.xml'):
