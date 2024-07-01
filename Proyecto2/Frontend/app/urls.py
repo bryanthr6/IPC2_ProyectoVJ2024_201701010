@@ -15,6 +15,7 @@ urlpatterns = [
     path('xmlEmpleados/', views.enviarEmpleados, name='xmlEmpleados'),
     path('xmlActividades/', views.enviarActividades, name='xmlActividades'),
     path('productos/', views.verProductos, name='productos'),
+    path('verproductosu/', views.verProductosuser, name='verproductosu'),
     path('logout/', views.custom_logout, name='logout'),
     path('pdf/', views.viewPDF, name='pdf'),
 ]

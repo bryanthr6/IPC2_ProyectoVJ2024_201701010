@@ -201,6 +201,17 @@ def verProductos(request):
     ctx['productos'] = data['productos']
     return render(request, 'verproductosadmin.html', ctx)
 
+def verProductosuser(request):
+    ctx = {
+        'productos':None,
+        'title':'Productos'
+    }
+    url = endpoint + 'verProductos'
+    response = requests.get(url)
+    data = response.json()
+    ctx['productos'] = data['productos']
+    return render(request, 'verproductosuser.html', ctx)
+
 
 def userview(request):
     return render(request, 'user.html')
