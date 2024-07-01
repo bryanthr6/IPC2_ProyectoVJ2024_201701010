@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<actividades>
+    <actividad id="1">
+        <nombre>Recepción de mercancía</nombre>
+        <descripcion>Recepción y revisión de la mercancía entrante</descripcion>
+        <empleado>6</empleado>
+        <dia hora="23">4</dia>
+    </actividad>
+    <actividad id="2">
+        <nombre>Asesoría al cliente</nombre>
+        <descripcion>Asesorar a los clientes sobre los productos</descripcion>
+        <empleado>18</empleado>
+        <dia hora="20">4</dia>
+    </actividad>
+    <actividad id="3">
+        <nombre>Asesoría al cliente</nombre>
+        <descripcion>Asesorar a los clientes sobre los productos</descripcion>
+        <empleado>7</empleado>
+        <dia hora="5">1</dia>
+    </actividad>
+    <actividad id="4">
+        <nombre>Recepción de mercancía</nombre>
+        <descripcion>Recepción y revisión de la mercancía entrante</descripcion>
+        <empleado>13</empleado>
+        <dia hora="22">1</dia>
+    </actividad>
+    <actividad id="5">
+        <nombre>Inventario</nombre>
+        <descripcion>Realizar inventario de los productos en el almacén</descripcion>
+        <empleado>19</empleado>
+        <dia hora="2">6</dia>
+    </actividad>
+    <actividad id="6">
+        <nombre>Preparación de pedidos</nombre>
+        <descripcion>Preparar los pedidos para su envío</descripcion>
+        <empleado>21</empleado>
+        <dia hora="22">3</dia>
+    </actividad>
+    <actividad id="7">
+        <nombre>Atención al Cliente</nombre>
+        <descripcion>Atender a los clientes de la tienda</descripcion>
+        <empleado>4</empleado>
+        <dia hora="15">3</dia>
+    </actividad>
+    <actividad id="8">
+        <nombre>Inventario</nombre>
+        <descripcion>Realizar inventario de los productos en el almacén</descripcion>
+        <empleado>3</empleado>
+        <dia hora="16">5</dia>
+    </actividad>
+    <actividad id="9">
+        <nombre>Limpieza de estanterías</nombre>
+        <descripcion>Limpiar y ordenar las estanterías del pasillo 1</descripcion>
+        <empleado>13</empleado>
+        <dia hora="22">4</dia>
+    </actividad>
+    <actividad id="10">
+        <nombre>Cobro en caja</nombre>
+        <descripcion>Cobrar a los clientes en la caja registradora</descripcion>
+        <empleado>6</empleado>
+        <dia hora="13">3</dia>
+    </actividad>
+    <actividad id="11">
+        <nombre>Recepción de mercancía</nombre>
+        <descripcion>Recepción y revisión de la mercancía entrante</descripcion>
+        <empleado>6</empleado>
+        <dia hora="6">2</dia>
+    </actividad>
+    <actividad id="12">
+        <nombre>Organización de almacén</nombre>
+        <descripcion>Organizar los productos en el almacén</descripcion>
+        <empleado>25</empleado>
+        <dia hora="11">1</dia>
+    </actividad>
+    <actividad id="13">
+        <nombre>Atención al Cliente</nombre>
+        <descripcion>Atender a los clientes de la tienda</descripcion>
+        <empleado>24</empleado>
+        <dia hora="18">2</dia>
+    </actividad>
+    <actividad id="14">
+        <nombre>Preparación de pedidos</nombre>
+        <descripcion>Preparar los pedidos para su envío</descripcion>
+        <empleado>10</empleado>
+        <dia hora="16">2</dia>
+    </actividad>
+    <actividad id="15">
+        <nombre>Preparación de pedidos</nombre>
+        <descripcion>Preparar los pedidos para su envío</descripcion>
+        <empleado>18</empleado>
+        <dia hora="22">7</dia>
+    </actividad>
+</actividades>
